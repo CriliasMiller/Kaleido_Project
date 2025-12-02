@@ -844,6 +844,16 @@ a:focus {
   box-shadow: var(--shadow-xl);
 }
 
+/* Full-size pipeline image - override height constraint */
+.full-size-pipeline {
+  width: 100%;
+  height: auto !important;
+  max-width: 100%;
+  object-fit: contain !important;
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-xl);
+}
+
 .video-caption {
   position: absolute;
   bottom: 0;

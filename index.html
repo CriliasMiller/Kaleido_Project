@@ -193,52 +193,6 @@
   </button>
 
   <!-- More Works Dropdown -->
-  <div class="more-works-container">
-    <button class="more-works-btn" onclick="toggleMoreWorks()" title="View More Works from Our Lab">
-      <i class="fas fa-flask"></i>
-      More Works
-      <i class="fas fa-chevron-down dropdown-arrow"></i>
-    </button>
-    <div class="more-works-dropdown" id="moreWorksDropdown">
-      <div class="dropdown-header">
-        <h4>More Works from Our Lab</h4>
-        <button class="close-btn" onclick="toggleMoreWorks()">
-          <i class="fas fa-times"></i>
-        </button>
-      </div>
-      <div class="works-list">
-        <!-- TODO: Replace with your lab's related works -->
-        <a href="https://arxiv.org/abs/2408.06072" class="work-item" target="_blank">
-          <div class="work-info">
-            <!-- TODO: Replace with actual paper title -->
-            <h5>CogvideoX</h5>
-            <!-- TODO: Replace with brief description -->
-            <p>Open-Sourced text or image to video generation: CogVideoX</p>
-            <!-- TODO: Replace with venue and year -->
-            <span class="work-venue">ICLR 2025</span>
-          </div>
-          <i class="fas fa-external-link-alt"></i>
-        </a>
-        <!-- TODO: Add more related works or remove extra items -->
-        <a href="https://arxiv.org/abs/2403.05121" class="work-item" target="_blank">
-          <div class="work-info">
-            <h5>CogView</h5>
-            <p>Open-Sourced text to image generation: Cogview3 +Cogview4</p>
-            <span class="work-venue">ECCV 2024</span>
-          </div>
-          <i class="fas fa-external-link-alt"></i>
-        </a>
-        <!-- <a href="https://arxiv.org/abs/PAPER_ID_3" class="work-item" target="_blank">
-          <div class="work-info">
-            <h5>Paper Title 3</h5>
-            <p>Brief description of the work and its main contribution.</p>
-            <span class="work-venue">Conference/Journal 2023</span>
-          </div>
-          <i class="fas fa-external-link-alt"></i>
-        </a> -->
-      </div>
-    </div>
-  </div>
 
   <main id="main-content">
   <section class="hero">
@@ -549,32 +503,35 @@
 <!-- End paper abstract -->
 
 <!-- Dataset Construction Pipeline and Framework -->
+<!-- Dataset Construction Pipeline -->
 <section class="section hero is-light">
   <div class="container is-max-desktop">
-    <div class="columns">
-      <!-- Dataset Construction Pipeline -->
-      <div class="column is-half has-text-centered dataset-construction-pipeline">
-        <h2 class="title is-3">Dataset Construction Pipeline</h2>
-        <div style="margin: 2rem 0;">
-          <figure class="image is-inline-block">
-            <img src="static/images/datapipeline-v2.png" alt="Dataset Construction Pipeline">
-          </figure>
-          <p class="has-text-justified" style="margin-top: 1.5rem;">
-            <strong>Multi-stage scalable S2V pipeline: video slicing/captioning, subject grounding, quality filtering, bg disentanglement & pose-motion augmentation</strong>
-          </p>
-        </div>
+    <div class="has-text-centered dataset-construction-pipeline">
+      <h2 class="title is-3">Dataset Construction Pipeline</h2>
+      <div style="margin: 2rem 0;">
+        <figure class="image is-inline-block">
+          <img src="static/images/datapipeline-v2.png" alt="Dataset Construction Pipeline" class="full-size-pipeline">
+        </figure>rel
+        <p class="has-text-justified" style="margin-top: 1.5rem;">
+          <strong>Multi-stage scalable S2V pipeline: video slicing/captioning, subject grounding, quality filtering, bg disentanglement & pose-motion augmentation</strong>
+        </p>
       </div>
+    </div>
+  </div>
+</section>
 
-      <!-- Framework -->
-      <div class="column is-half has-text-centered framework-section">
-        <h2 class="title is-3">Framework</h2>
-        <div style="margin: 2rem 0;">
-          <figure class="image is-inline-block">
-            <img src="static/images/rope-v2.png" alt="Framework Illustration">
-          </figure>
-          <p class="has-text-justified" style="margin-top: 1.5rem;">
-            <strong>Illustration of our subject-to-video framework.</strong> (a) Multiple reference images are injected for guided video generation. (b) Video tokens use 3D RoPE positional encoding, while (c) reference images utilize R-RoPE for distinct spatial-temporal positioning.</p>
-        </div>
+<!-- Framework -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="has-text-centered framework-section">
+      <h2 class="title is-3">Framework</h2>
+      <div style="margin: 2rem 0;">
+        <figure class="image is-inline-block">
+          <img src="static/images/rope-v2.png" alt="Framework Illustration">
+        </figure>
+        <p class="has-text-justified" style="margin-top: 1.5rem;">
+          <strong>Illustration of our subject-to-video framework.</strong> (a) Multiple reference images are injected for guided video generation. (b) Video tokens use 3D RoPE positional encoding, while (c) reference images utilize R-RoPE for distinct spatial-temporal positioning.
+        </p>
       </div>
     </div>
   </div>
