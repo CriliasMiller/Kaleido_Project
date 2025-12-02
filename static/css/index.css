@@ -854,6 +854,25 @@ a:focus {
   box-shadow: var(--shadow-xl);
 }
 
+/* User Study specific styling */
+.container.is-max-desktop .column.is-four-fifths .image.is-inline-block {
+  text-align: center;
+  overflow: visible;
+}
+
+.container.is-max-desktop .column.is-four-fifths img.full-size-pipeline,
+.container.is-max-desktop img[src*="user study"] {
+  width: 100% !important;
+  height: auto !important;
+  object-fit: contain !important;
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-xl);
+  display: block;
+  transform: scale(1.5);
+  transform-origin: center;
+  margin: 2rem auto;
+}
+
 .video-caption {
   position: absolute;
   bottom: 0;
