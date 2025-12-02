@@ -162,7 +162,7 @@ function setupVideoLazyLoading() {
         if (videoContainer && !videoContainer.querySelector('.video-loading-placeholder')) {
             const placeholder = document.createElement('div');
             placeholder.className = 'video-loading-placeholder';
-            placeholder.innerHTML = '<div class="loading-spinner"><i class="fas fa-spinner fa-spin"></i> 加载视频...</div>';
+            placeholder.innerHTML = '<div class="loading-spinner"><i class="fas fa-spinner fa-spin"></i> loading video...</div>';
             placeholder.style.cssText = `
                 position: absolute;
                 top: 0;
@@ -232,7 +232,7 @@ function setupVideoLazyLoading() {
                 } catch (error) {
                     console.error('Video loading error:', error);
                     if (placeholder) {
-                        placeholder.innerHTML = '<div style="color: #ef4444; padding: 1rem;">视频加载失败</div>';
+                        placeholder.innerHTML = '<div style="color: #ef4444; padding: 1rem;">loading failed</div>';
                     }
                 }
 
