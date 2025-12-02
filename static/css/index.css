@@ -145,6 +145,37 @@ body {
   padding: 6rem 1.5rem 4rem;
 }
 
+/* 扩展标题部分的宽度 - 只影响第一个hero部分 */
+body > main > .hero:first-of-type .container.is-widescreen {
+  max-width: 1600px; /* 从默认的1344px增加到1600px */
+}
+
+/* 进一步扩展标题和作者区域 - 只影响第一个hero部分 */
+body > main > .hero:first-of-type .column.has-text-centered {
+  max-width: 100%;
+  width: 100%;
+  padding: 0 2rem;
+}
+
+.publication-title {
+  max-width: 100%;
+  word-wrap: break-word;
+  hyphens: auto;
+  padding: 0 1rem;
+}
+
+.publication-authors {
+  max-width: 100%;
+  word-wrap: break-word;
+  padding: 0 1rem;
+  line-height: 1.8;
+}
+
+.author-block {
+  margin-right: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
 .publication-authors {
     font-family: 'Inter', sans-serif !important;
     font-weight: 500;
