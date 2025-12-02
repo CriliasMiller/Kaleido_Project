@@ -226,7 +226,6 @@ function setupVideoLazyLoading() {
                         video.addEventListener('loadeddata', onVideoLoaded, { once: true });
                     }
 
-                    // 强制加载视频
                     video.load();
 
                 } catch (error) {
